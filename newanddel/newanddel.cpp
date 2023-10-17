@@ -5,7 +5,7 @@
 using namespace std;
 
 
-void CalcMulC(int* array ,int size,int average)
+void CalcMulC(int* array ,int size,float average)
 {
      int CIN;
     for (int i = 0;i<size;i++)
@@ -15,7 +15,7 @@ void CalcMulC(int* array ,int size,int average)
         array[i] = CIN;
     }
 }
-void ShowArray(const int* array, int size,int average)
+void ShowArray(const int* array, int size,float average)
 {
     for (int i = 0; i < size; i++)
     {
@@ -29,7 +29,7 @@ int main()
 {
     int* array;
     int size;
-    int average=0;
+    float average=0;
     cout << "入力したいテストの人数を打ってください" << endl;
     cin >> size;
     array = new int[size];
